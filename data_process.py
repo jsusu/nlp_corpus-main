@@ -57,58 +57,6 @@ entity_types = ["Company", "Location", "Organization", "Person", "Time","Governm
                 "Book","Game","Movie","Position","Music","Scene","Video","Product","Country",
                 "Education", "Major", "Nation", ]
 
-
-
-# 处理boson数据集
-def transfer_boson(source_file, target_file):
-    # {"text": "浙江在线杭州4月25日讯（记者 施宇翔 通讯员 方英）毒贩很“时髦”，用微信交易毒品。没料想警方也很“潮”，将计就计，一举将其擒获。记者从杭州江干区公安分局了解到，经过一个多月的侦查工作，江干区禁毒专案组抓获吸贩毒人员5名，缴获“冰毒”400余克，毒资30000余元，扣押汽车一辆。黑龙江籍男子钱某长期落脚于宾馆、单身公寓，经常变换住址。他有一辆车，经常半夜驾车来往于杭州主城区的各大宾馆和单身公寓，并且常要活动到凌晨6、7点钟，白天则在家里呼呼大睡。钱某不寻常的特征，引起了警方注意。禁毒大队通过侦查，发现钱某实际上是在向落脚于宾馆和单身公寓的吸毒人员贩送“冰毒”。\n", "entity_list": [{"entity_index": {"begin": 0, "end": 6}, "entity_type": "product_name", "entity": "浙江在线杭州"}, {"entity_index": {"begin": 6, "end": 11}, "entity_type": "time", "entity": "4月25日"}, {"entity_index": {"begin": 15, "end": 19}, "entity_type": "person_name", "entity": " 施宇翔"}, {"entity_index": {"begin": 24, "end": 26}, "entity_type": "person_name", "entity": "方英"}, {"entity_index": {"begin": 36, "end": 38}, "entity_type": "product_name", "entity": "微信"}, {"entity_index": {"begin": 69, "end": 78}, "entity_type": "org_name", "entity": "杭州江干区公安分局"}, {"entity_index": {"begin": 94, "end": 102}, "entity_type": "org_name", "entity": "江干区禁毒专案组"}, {"entity_index": {"begin": 141, "end": 144}, "entity_type": "location", "entity": "黑龙江"}, {"entity_index": {"begin": 147, "end": 149}, "entity_type": "person_name", "entity": "钱某"}, {"entity_index": {"begin": 184, "end": 189}, "entity_type": "location", "entity": "杭州主城区"}, {"entity_index": {"begin": 207, "end": 214}, "entity_type": "time", "entity": "凌晨6、7点钟"}, {"entity_index": {"begin": 215, "end": 217}, "entity_type": "time", "entity": "白天"}, {"entity_index": {"begin": 226, "end": 228}, "entity_type": "person_name", "entity": "钱某"}, {"entity_index": {"begin": 254, "end": 256}, "entity_type": "person_name", "entity": "钱某"}]}
-    #
-    # {
-    #     "index": 0,
-    #     "globalType": "",
-    #     "tags": [
-    #         {
-    #             "name": "人物",
-    #             "tag": "Person",
-    #             "content": "安玮",
-    #             "start": 0,
-    #             "end": 2
-    #         },
-    # }
-
-
-
-
-
-
-    pass
-
-
-# 处理clueNer_public数据集
-def transfer_clueNerPublic(source_file, target_file):
-    pass
-
-
-# 处理MSRA数据集
-def transfer_MSRA(source_file, target_file):
-    pass
-
-
-# 处理people_daily数据集
-def transfer_peopleDaily(source_file, target_file):
-    pass
-
-
-# 处理ResumeNER数据集
-def transfer_ResumeNER(source_file, target_file):
-    pass
-
-
-# 处理VideoMusicBookDatasets数据集
-def transfer_VideoMusicBookDatasets(source_file, target_file):
-    pass
-
-
 # 统计实体类型和个数
 def static_entity(files, num=None):
     sta_dict = defaultdict(int)
