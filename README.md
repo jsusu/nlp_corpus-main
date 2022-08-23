@@ -1,15 +1,27 @@
 # nlp_corpus
-## 1 中文实体识别
+[**中文说明**](https://) | [**English**](https://)
+
+<p align="center">
+    <a href="">
+        <img alt="GitHub" src="https://img.shields.io/github/license/ymcui/Chinese-BERT-wwm.svg?color=blue&style=flat-square">
+    </a>
+</p>
+
+中文实体识别
 - open_ner_data为网上开放的ner数据集，已将不同的数据格式转化为统一的数据格式，格式转换脚本为data_transfer.py
 - processed_data为统一实体命名后的数据集，格式转换脚本为data_process.py
 
+1.1 boson数据集
 
-    1.1 boson数据集
-    1.2 clue细粒度实体识别数据集
-    1.3 MSRA数据集
-    1.4 微软实体识别数据集
-    1.5 人民网实体识别数据集（98年）
-    1.6 视频_音乐_图书数据集
+1.2 clue细粒度实体识别数据集
+
+1.3 MSRA数据集
+
+1.4 微软实体识别数据集
+
+1.5 人民网实体识别数据集（98年）
+
+1.6 视频_音乐_图书数据集
 ```python
 # 公司、地址、组织、人物、时间、政府、书籍、游戏、电影、职位、音乐、景点、影视、产品、国籍、学历、专业、民族
 entity_types = ["Company", "Location", "Organization", "Person", "Time","Government",
